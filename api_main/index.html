@@ -405,11 +405,19 @@
 <span class="normal">24</span>
 <span class="normal">25</span>
 <span class="normal">26</span>
-<span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Main function that invokes salary function.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="n">salary</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">2000</span><span class="p">))</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">hours</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese el numero de horas: &quot;</span><span class="p">))</span>
+        <span class="n">wage</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese el monto por hora: &quot;</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">salary</span><span class="p">(</span><span class="n">hours</span><span class="p">,</span><span class="n">wage</span><span class="p">))</span>
+    <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dato incorrecto!!&quot;</span><span class="p">)</span>    
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
