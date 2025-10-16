@@ -3,7 +3,7 @@ name: Deploy MkDocs documentation
 on:
   push:
     branches:
-      - main  # o la rama que uses para desplegar
+      - '**'  # Ejecuta en todos los branches al hacer push
 
 jobs:
   deploy:
